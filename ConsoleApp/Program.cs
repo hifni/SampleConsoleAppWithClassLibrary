@@ -8,11 +8,14 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            ClassLibraryApp.Class1 simpleClass = new Class1();
-            var s = simpleClass.CanAccess();
+            ClassLibraryApp.Class1 simpleClass1 = new Class1();
+            ClassLibraryApp.Class2 simpleClass2 = new Class2();
+            var s1 = simpleClass1.spitOut();
+            var s2 = simpleClass2.spitOut();
 
-            Console.WriteLine(s);
-        
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
+
         }
     }
 }

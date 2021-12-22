@@ -15,11 +15,26 @@ namespace ClassLibraryApp
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
             this._configuration = builder.Build();
         }
-        public string CanAccess()
+        public string spitOut()
         {
             var value1 = Environment.GetEnvironmentVariable("APPSETTING_Org").ToString();
             var value2 = _configuration["AppSettings:Org"];
             return $"From Environment: {value1} From JSON File: {value2}"; 
+        }
+    }
+
+    public class Class2 : ConfigManager
+    {
+        public Class2():base()
+        {
+           
+        }
+
+        public string spitOut()
+        {
+            var value1 = Environment.GetEnvironmentVariable("APPSETTING_Org").ToString();
+            var value2 = GetConfigurationSection("AppSettings:Org").Value;
+            return $"From Environment: {value1} From JSON File: {value2}";
         }
     }
 }

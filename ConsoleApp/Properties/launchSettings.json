@@ -3,7 +3,7 @@
     "ConsoleApp": {
       "commandName": "Project",
       "environmentVariables": {
-        "APPSETTING:Org": "JKH"
+        "APPSETTING_Org": "JKH"
       }
     }
   }

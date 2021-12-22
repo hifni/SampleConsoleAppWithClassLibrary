@@ -8,12 +8,15 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryApp
 {
-    public class ConfigurationManager: IConfigurationManager
+    public class ConfigManager: IConfigurationManager
     { 
         private readonly IConfiguration _configuration;
-        public ConfigurationManager(IConfiguration configuration)
+
+        //Removed this Signature IConfiguration configuration
+        public ConfigManager()
         {
             //this._configuration = configuration;
+
 
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
