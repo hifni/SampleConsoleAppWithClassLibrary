@@ -6,7 +6,7 @@ This code work shows how can .net Core Class Library connect to a Configuration 
 2. .net Core Framework 5
 3. An Azure Subscription
 
-> Tested using Azure App Service with `Linux` running `.net 5`
+> Tested using Azure App Service with `Windows` running `.net 5`
 
 My `appsettings.json` will look like this:
 
